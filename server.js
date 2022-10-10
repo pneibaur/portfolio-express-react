@@ -6,31 +6,20 @@ const express = require("express")
 const app = express()
 const cors = require("cors")
 const morgan = require("morgan")
-const projects = require("./projects.json")
-const about = require("./about.json")
 
-// ---------------------------------
-// MONGOOSE CONNECTION
-// ---------------------------------
 // ---------------------------------
 // MIDDLEWARE
 // ---------------------------------
 app.use(cors())
+app.use(morgan("dev"))
+
 // ---------------------------------
 // ROUTES
 // ---------------------------------
-app.get("/", (req, res) => {
-    res.send("<h1>HELLO THERE!</h1>")
-})
+const portfolioRouter = require("./routes/portfolio.js")
+app.use("/", portfolioRouter)
 
-// INDEX projects
-app.get("/projects", (req, res)=>{
-    res.json(projects)
-})
-// INDEX about
-app.get("/about", (req, res) =>{
-    res.json(about)
-})
+
 // ---------------------------------
 // LISTENER
 // ---------------------------------

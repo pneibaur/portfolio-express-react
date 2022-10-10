@@ -1,0 +1,22 @@
+
+[
+    {
+      "name": "PokeGo Stats",
+      "liveLink": "https://pokegostats.netlify.app/",
+      "gitRepo": "https://github.com/pneibaur/PokeGo-Stats",
+      "image": "https://i.imgur.com/xcjrT65.png"
+    },
+    {
+      "name": "CookBook Web App",
+      "liveLink": "https://cookbookwebapp.herokuapp.com/",
+      "gitRepo": "https://github.com/pneibaur/cookbookwebapp",
+      "image": "https://i.imgur.com/ult7Bsn.png"
+    },
+    {
+      "name": "Virtual Mall",
+      "liveLink": "https://virtual-mall-usa.netlify.app/",
+      "gitRepo": "https://github.com/pneibaur/Virtual-Mall-Frontend",
+      "image": "https://i.imgur.com/Zx6wj9z.png"
+    }
+  ]
+  
